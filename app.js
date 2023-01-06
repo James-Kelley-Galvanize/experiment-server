@@ -13,7 +13,7 @@ app.use(morgan(`tiny`));
 app.get(`/`, (req, res) => {
   res.send(500, JSON.stringify({ message: `SERVER ONLINE` }));
 });
-app.get(`/cats`, () => {
+app.get(`/cats`, (req, res) => {
   getCats()
     .then((data) => {
       res.send(500, JSON.stringify(data));
