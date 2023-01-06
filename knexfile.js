@@ -1,4 +1,4 @@
-const connectionString = process.env.DATABASE_URL; // USE SAME FOR ALL EXPERIMENTS TO KEEP IT EASY
+const connectionString = process.env.DATABASE_URL; // USE SAME FOR ALL EXPERIMENTS TO KEEP IT EASY?
 
 module.exports = {
   development: {
