@@ -9,6 +9,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(morgan(`tiny`));
 
-app.get(`/`, (req, res) => {});
+app.get(`/`, (req, res) => {
+  res.send(500, `SERVER ONLINE`);
+});
 
 module.exports = app;
