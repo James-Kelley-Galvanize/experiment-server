@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run start-knex && node index.js --no-bin-links",
-    "start-knex": "knex migrate:rollback && npx knex migrate:latest && npx knex seed:run",
+    "old-start": "npm run start-knex && node index.js --no-bin-links",
+    "start": "knex migrate:rollback && npx knex migrate:latest && npx knex seed:run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
